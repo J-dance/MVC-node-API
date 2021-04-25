@@ -11,8 +11,8 @@ import * as middleware from "./middleware.js";
 const app = express();
 app.use(express.json());
 
-// Listen on port Heroku PORt or 8080 for local
-const PORT = process.env.PORT;
+// Listen on port Heroku PORT or 8080 for local
+const PORT = process.env.PORT || 8080;
 app.listen(PORT);
 
 // Note: this is a security setting to allow incoming requests from anywhere :) Good for testing, bad for production
