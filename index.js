@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 
 // Listen on port Heroku PORt or 8080 for local
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT;
 app.listen(PORT);
 
 // Note: this is a security setting to allow incoming requests from anywhere :) Good for testing, bad for production
